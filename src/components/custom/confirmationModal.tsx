@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "@/components/ui/button";
 
 interface ConfirmationModalProps {
@@ -16,9 +14,7 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
-        <div className="flex items-center justify-center mb-4">
-          <FontAwesomeIcon icon={faCheckCircle} className="text-6xl" />
-        </div>
+        <div className="flex items-center justify-center mb-4"></div>
         <h2 className="text-xl font-semibold text-center mb-4">
           Emails Sent Successfully!
         </h2>

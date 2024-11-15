@@ -24,7 +24,7 @@ export default function Home() {
   const [participants, setParticipants] = useState<Participant[]>([]);
   const [nickname, setNickname] = useState("");
   const [email, setEmail] = useState("");
-  const [modalOpen, setModalOpen] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const addParticipant = () => {
     if (nickname && email) {
